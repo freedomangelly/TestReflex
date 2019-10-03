@@ -3,6 +3,7 @@ package com.example.testreflex;
 public class Person {
     private int age;
     private String name;
+    private byte[] b;
 
     public Person(int age, String name) {
         this.age = age;
@@ -30,10 +31,22 @@ public class Person {
 
     @Override
     public String toString() {
-        return "name="+name+",age="+age;
+        return "toString mothed,"+"name="+name+",age="+age;
     }
 
     private String myToString(){
-        return "name="+name+",age="+age;
+        return "myToString mothed,"+"name="+name+",age="+age;
+    }
+
+    public static String staticToString(){
+        return "static.tostring";
+    }
+
+    public byte[] getB() {
+        return b;
+    }
+
+    public void setB(byte[] b) {
+        this.b = b;
     }
 }
